@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 함수
+        함수는 하나의 실행문을 저장하고 변수는 하나의 데이터를 저장하여 사용합니다.
+        함수는 스크립트 실행문을 보관하는 역할을 하기 때문에 반복 사용되는 코드를
+        구조화하거나 재활용을 목적으로 사용합니다. */
+
+        /* 함수에서 사용되는 용어
+        매개변수 : 함수에 자료를 넘기기 위해 사용되는 변수
+                = 인자(parameter) 파라메타
+        리턴값 : 함수를 실행하고 나는 결과값
+        콜백함수 : 함수에 매개변수를 함수를 전달할때 사용하는 함수
+        호출 : 함수를 실행시킬때 호출이라고 표현
+        인수(argument) - 아큐먼트 : 함수를 호출될때 함수로 값을 전달해 주는
+        변수를 가리킨다. */
+
+
+        /* for(초기값; 조건문; 증가감식){
+            조건문이 만족하는 동안 실행문
+        } */
+
+        for(var i = 1; i <= 4; i++){
+            document.write('이것은 빨간색' + i + '입니다.<br>')
+        }
+
+        for(var i = 1; i <= 4; i++){
+            document.write('이것은 파란색' + i + '입니다.<br>')
+        }
+
+        for(var i = 1; i <= 4; i++){
+            document.write('이것은 검정색' + i + '입니다.<br>')
+        }
+
+        document.write("--------------------------<br>")
+        function 칼라만들기(color){ //color는 매개변수/인자
+        for(var i = 1; i <= 4; i++){
+            document.write('이것은' + color + i + '입니다.<br>')
+        }
+    }
+
+    칼라만들기("빨간색"); //"빨간색" 인수(argument)
+    칼라만들기("파란색"); //호출
+    칼라만들기("검정색");
+
+
+    document.write("--------------------------<br>")
+    function 커피만들기(재료){
+        for(var i = 1; i <= 4; i++){
+            document.write('이것은' + 재료 + i + '입니다.<br>')
+        }
+    }
+
+    커피만들기('흙');
+    커피만들기('커피콩');
+    커피만들기('뜨거운물');
+    </script>
+</body>
+</html>
