@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+
+
+.nav {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    height: 61px;
+}
+.nav.on{
+    position: fixed;
+    top: 0;
+}
+.nav h1 {
+    float: left;
+    font-size: 40px;
+    color: #fff;
+}
+
+.nav ul {
+    float: right;
+}
+
+.nav ul li {
+    float: left;
+    list-style: none;
+}
+
+.nav ul li a {
+    display: block;
+    color: #fff;
+    padding: 20px 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.nav ul li.active a{
+    color: #000;
+}
+
+
+
+
+
+#contents {}
+
+#contents div {
+    height: 100vh;
+}
+
+#contents div h2 {
+    position: relative;
+    top: 30%;
+    text-align: center;
+    color: #fff;
+    font-size: 70px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+#contents div#section1 {
+    background: linear-gradient(to bottom, #dce35b, #45b649);
+}
+
+#contents div#section2 {
+    background: linear-gradient(to bottom, #ee0979, #ff6a00);
+}
+
+#contents div#section3 {
+    background: linear-gradient(to bottom, #d38312, #a83279);
+}
+
+#contents div#section4 {
+    background: linear-gradient(to bottom, #2980b9, #6dd5fa, #ffffff);
+}
+
+#contents div#section5 {
+    background: linear-gradient(to bottom, #d9a7c7, #fffcdc);
+}
+
+#contents div#section6 {
+    background: linear-gradient(to bottom, #40e0d0, #ff8c00, #ff0080);
+}
+
+@media (max-width:800px) {
+    .mNav {
+        display: block;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .nav ul {
+        float: none;
+    }
+
+    .nav ul li {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav ul li.active a {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .nav h1 {
+        float: none;
+        text-align: center;
+    }
+}
