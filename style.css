@@ -1,0 +1,25 @@
+*{margin: 0; padding: 0;}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#header{height: 200px; background: #CDC2AE;}
+
+#banner{height: 200px; background: #EF9F9F;}
+
+#sticky{background: #827397;}
+#sticky .left{float: left; width: 50%; background: #646FD4;}
+#sticky .left .l1{height: 50vh; background: #809A6F;}
+#sticky .left .l2{height: 50vh; background: #EC994B;}
+#sticky .left .l3{height: 50vh; background: #CCF3EE;}
+#sticky .left .l4{height: 50vh; background: #FFEF82;}
+
+#sticky .right{float: right; width: 50%; height: 200vh; background: #069A8E;}
+#sticky .right .r{position: sticky; top: 0; height: 50vh; background: #8E3200;}
+#sticky .right .r div{height: 50vh; overflow: hidden;}
+#sticky .right .r div img{width: 100%;}
+
+#footer{height: 100vh; background: #F900BF;}
